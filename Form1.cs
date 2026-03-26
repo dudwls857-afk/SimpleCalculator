@@ -4,6 +4,7 @@ namespace SimpleCalculator
     {
         Double num1 = 0;
         string op = "";
+
         public Form1()
         {
             InitializeComponent();
@@ -132,7 +133,23 @@ namespace SimpleCalculator
 
         private void btnClearEntry_Click(object sender, EventArgs e)
         {
-            txtExpression.Text = "";
+            string expr = txtExpression.Text;
+
+            if (string.IsNullOrEmpty(expr))
+                return;
+
+            int lastOpIndex = expr.LastIndexOfAny(new char[] { '+', '-', '×', '÷', '*', '/' });
+
+            if (lastOpIndex == -1)
+            {
+                txtExpression.Text = "";
+            }
+            else
+            {
+                txtExpression.Text = expr.Substring(0, lastOpIndex + 1);
+            }
+
+            txtResult.Text = "";
         }
 
         private void btnDel_Click(object sender, EventArgs e)
