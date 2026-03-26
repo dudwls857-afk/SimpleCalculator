@@ -79,15 +79,47 @@ namespace SimpleCalculator
 
         private void btnEqual_Click(object sender, EventArgs e)
         {
-            string[] parts = txtExpression.Text.Split('+');
+            string[] parts;
+
+            if (op == "+") parts = txtExpression.Text.Split('+');
+            else if (op == "-") parts = txtExpression.Text.Split('-');
+            else if (op == "*") parts = txtExpression.Text.Split('*');
+            else parts = txtExpression.Text.Split('/');
 
             int n1 = int.Parse(parts[0]);
             int n2 = int.Parse(parts[1]);
 
-            int result = n1 + n2;
+            int result = 0;
+
+            if (op == "+") result = n1 + n2;
+            else if (op == "-") result = n1 - n2;
+            else if (op == "*") result = n1 * n2;
+            else if (op == "/") result = n1 / n2;
 
             txtExpression.Text = txtExpression.Text + "=" + result.ToString();
             txtResult.Text = result.ToString();
+        }
+
+
+        private void btnDiv_Click(object sender, EventArgs e)
+        {
+            num1 = int.Parse(txtExpression.Text);
+            op = "/";
+            txtExpression.Text += "/";
+        }
+
+        private void btnMinus_Click(object sender, EventArgs e)
+        {
+            num1 = int.Parse(txtExpression.Text);
+            op = "-";
+            txtExpression.Text += "-";
+        }
+
+        private void btnMul_Click(object sender, EventArgs e)
+        {
+            num1 = int.Parse(txtExpression.Text);
+            op = "*";
+            txtExpression.Text += "*";
         }
     }
 }
