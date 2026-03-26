@@ -56,27 +56,29 @@
             // txtExpression
             // 
             txtExpression.BackColor = Color.FromArgb(128, 255, 128);
-            txtExpression.Location = new Point(147, 89);
+            txtExpression.Location = new Point(107, 77);
+            txtExpression.Multiline = true;
             txtExpression.Name = "txtExpression";
-            txtExpression.Size = new Size(338, 23);
+            txtExpression.Size = new Size(378, 40);
             txtExpression.TabIndex = 0;
             txtExpression.TextChanged += txtExpression_TextChanged;
             // 
             // txtResult
             // 
             txtResult.BackColor = Color.FromArgb(128, 255, 128);
-            txtResult.Location = new Point(147, 132);
+            txtResult.Location = new Point(107, 123);
+            txtResult.Multiline = true;
             txtResult.Name = "txtResult";
-            txtResult.Size = new Size(338, 23);
+            txtResult.Size = new Size(378, 40);
             txtResult.TabIndex = 1;
             txtResult.TextChanged += txtResult_TextChanged;
             // 
             // btn0
             // 
             btn0.BackColor = Color.FromArgb(192, 255, 255);
-            btn0.Location = new Point(233, 392);
+            btn0.Location = new Point(203, 441);
             btn0.Name = "btn0";
-            btn0.Size = new Size(80, 48);
+            btn0.Size = new Size(90, 60);
             btn0.TabIndex = 2;
             btn0.Text = "0";
             btn0.UseVisualStyleBackColor = false;
@@ -85,9 +87,9 @@
             // btn1
             // 
             btn1.BackColor = Color.FromArgb(192, 255, 255);
-            btn1.Location = new Point(147, 338);
+            btn1.Location = new Point(107, 375);
             btn1.Name = "btn1";
-            btn1.Size = new Size(80, 48);
+            btn1.Size = new Size(90, 60);
             btn1.TabIndex = 3;
             btn1.Text = "1";
             btn1.UseVisualStyleBackColor = false;
@@ -96,9 +98,9 @@
             // btn2
             // 
             btn2.BackColor = Color.FromArgb(192, 255, 255);
-            btn2.Location = new Point(233, 338);
+            btn2.Location = new Point(203, 375);
             btn2.Name = "btn2";
-            btn2.Size = new Size(80, 48);
+            btn2.Size = new Size(90, 60);
             btn2.TabIndex = 4;
             btn2.Text = "2";
             btn2.UseVisualStyleBackColor = false;
@@ -107,9 +109,9 @@
             // btn3
             // 
             btn3.BackColor = Color.FromArgb(192, 255, 255);
-            btn3.Location = new Point(319, 338);
+            btn3.Location = new Point(299, 375);
             btn3.Name = "btn3";
-            btn3.Size = new Size(80, 48);
+            btn3.Size = new Size(90, 60);
             btn3.TabIndex = 5;
             btn3.Text = "3";
             btn3.UseVisualStyleBackColor = false;
@@ -118,9 +120,9 @@
             // btn4
             // 
             btn4.BackColor = Color.FromArgb(192, 255, 255);
-            btn4.Location = new Point(147, 284);
+            btn4.Location = new Point(108, 309);
             btn4.Name = "btn4";
-            btn4.Size = new Size(80, 48);
+            btn4.Size = new Size(90, 60);
             btn4.TabIndex = 6;
             btn4.Text = "4";
             btn4.UseVisualStyleBackColor = false;
@@ -129,9 +131,9 @@
             // btn5
             // 
             btn5.BackColor = Color.FromArgb(192, 255, 255);
-            btn5.Location = new Point(233, 284);
+            btn5.Location = new Point(203, 309);
             btn5.Name = "btn5";
-            btn5.Size = new Size(80, 48);
+            btn5.Size = new Size(90, 60);
             btn5.TabIndex = 7;
             btn5.Text = "5";
             btn5.UseVisualStyleBackColor = false;
@@ -140,9 +142,9 @@
             // btn6
             // 
             btn6.BackColor = Color.FromArgb(192, 255, 255);
-            btn6.Location = new Point(319, 284);
+            btn6.Location = new Point(299, 309);
             btn6.Name = "btn6";
-            btn6.Size = new Size(80, 48);
+            btn6.Size = new Size(90, 60);
             btn6.TabIndex = 8;
             btn6.Text = "6";
             btn6.UseVisualStyleBackColor = false;
@@ -151,9 +153,9 @@
             // button7
             // 
             button7.BackColor = Color.FromArgb(192, 255, 255);
-            button7.Location = new Point(147, 230);
+            button7.Location = new Point(108, 243);
             button7.Name = "button7";
-            button7.Size = new Size(80, 48);
+            button7.Size = new Size(90, 60);
             button7.TabIndex = 9;
             button7.Text = "7";
             button7.UseVisualStyleBackColor = false;
@@ -162,9 +164,9 @@
             // button8
             // 
             button8.BackColor = Color.FromArgb(192, 255, 255);
-            button8.Location = new Point(233, 230);
+            button8.Location = new Point(203, 243);
             button8.Name = "button8";
-            button8.Size = new Size(80, 48);
+            button8.Size = new Size(90, 60);
             button8.TabIndex = 10;
             button8.Text = "8";
             button8.UseVisualStyleBackColor = false;
@@ -173,9 +175,9 @@
             // button9
             // 
             button9.BackColor = Color.FromArgb(192, 255, 255);
-            button9.Location = new Point(319, 230);
+            button9.Location = new Point(299, 243);
             button9.Name = "button9";
-            button9.Size = new Size(80, 48);
+            button9.Size = new Size(90, 60);
             button9.TabIndex = 11;
             button9.Text = "9";
             button9.UseVisualStyleBackColor = false;
@@ -186,9 +188,9 @@
             btnEqual.BackColor = Color.FromArgb(255, 192, 255);
             btnEqual.Font = new Font("맑은 고딕", 24F, FontStyle.Regular, GraphicsUnit.Point, 129);
             btnEqual.ForeColor = Color.Blue;
-            btnEqual.Location = new Point(405, 392);
+            btnEqual.Location = new Point(395, 441);
             btnEqual.Name = "btnEqual";
-            btnEqual.Size = new Size(80, 48);
+            btnEqual.Size = new Size(90, 60);
             btnEqual.TabIndex = 12;
             btnEqual.Text = "=";
             btnEqual.UseVisualStyleBackColor = false;
@@ -199,9 +201,9 @@
             btnPlus.BackColor = Color.FromArgb(255, 255, 192);
             btnPlus.Font = new Font("맑은 고딕", 24F, FontStyle.Regular, GraphicsUnit.Point, 129);
             btnPlus.ForeColor = Color.Red;
-            btnPlus.Location = new Point(405, 338);
+            btnPlus.Location = new Point(395, 375);
             btnPlus.Name = "btnPlus";
-            btnPlus.Size = new Size(80, 48);
+            btnPlus.Size = new Size(90, 60);
             btnPlus.TabIndex = 13;
             btnPlus.Text = "+";
             btnPlus.UseVisualStyleBackColor = false;
@@ -212,7 +214,7 @@
             SimpleCalculator.AutoSize = true;
             SimpleCalculator.Font = new Font("맑은 고딕", 36F, FontStyle.Regular, GraphicsUnit.Point, 129);
             SimpleCalculator.ForeColor = Color.Green;
-            SimpleCalculator.Location = new Point(112, 9);
+            SimpleCalculator.Location = new Point(92, 9);
             SimpleCalculator.Name = "SimpleCalculator";
             SimpleCalculator.Size = new Size(410, 65);
             SimpleCalculator.TabIndex = 14;
@@ -223,9 +225,9 @@
             btnMul.BackColor = Color.FromArgb(255, 255, 192);
             btnMul.Font = new Font("맑은 고딕", 24F, FontStyle.Regular, GraphicsUnit.Point, 129);
             btnMul.ForeColor = Color.Red;
-            btnMul.Location = new Point(405, 230);
+            btnMul.Location = new Point(395, 243);
             btnMul.Name = "btnMul";
-            btnMul.Size = new Size(80, 48);
+            btnMul.Size = new Size(90, 60);
             btnMul.TabIndex = 16;
             btnMul.Text = "×";
             btnMul.UseVisualStyleBackColor = false;
@@ -236,9 +238,9 @@
             btnMinus.BackColor = Color.FromArgb(255, 255, 192);
             btnMinus.Font = new Font("맑은 고딕", 24F, FontStyle.Regular, GraphicsUnit.Point, 129);
             btnMinus.ForeColor = Color.Red;
-            btnMinus.Location = new Point(405, 284);
+            btnMinus.Location = new Point(395, 309);
             btnMinus.Name = "btnMinus";
-            btnMinus.Size = new Size(80, 48);
+            btnMinus.Size = new Size(90, 60);
             btnMinus.TabIndex = 17;
             btnMinus.Text = "-";
             btnMinus.UseVisualStyleBackColor = false;
@@ -249,9 +251,9 @@
             btnDiv.BackColor = Color.FromArgb(255, 255, 192);
             btnDiv.Font = new Font("맑은 고딕", 24F, FontStyle.Regular, GraphicsUnit.Point, 129);
             btnDiv.ForeColor = Color.Red;
-            btnDiv.Location = new Point(405, 176);
+            btnDiv.Location = new Point(395, 178);
             btnDiv.Name = "btnDiv";
-            btnDiv.Size = new Size(80, 48);
+            btnDiv.Size = new Size(90, 60);
             btnDiv.TabIndex = 18;
             btnDiv.Text = "÷";
             btnDiv.UseVisualStyleBackColor = false;
@@ -260,9 +262,9 @@
             // btnDel
             // 
             btnDel.BackColor = Color.FromArgb(192, 255, 255);
-            btnDel.Location = new Point(319, 176);
+            btnDel.Location = new Point(299, 177);
             btnDel.Name = "btnDel";
-            btnDel.Size = new Size(80, 48);
+            btnDel.Size = new Size(90, 60);
             btnDel.TabIndex = 19;
             btnDel.Text = "Del";
             btnDel.UseVisualStyleBackColor = false;
@@ -271,9 +273,9 @@
             // btnClear
             // 
             btnClear.BackColor = Color.FromArgb(192, 255, 255);
-            btnClear.Location = new Point(233, 176);
+            btnClear.Location = new Point(203, 177);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(80, 48);
+            btnClear.Size = new Size(90, 60);
             btnClear.TabIndex = 20;
             btnClear.Text = "C";
             btnClear.UseVisualStyleBackColor = false;
@@ -282,9 +284,9 @@
             // btnClearEntry
             // 
             btnClearEntry.BackColor = Color.FromArgb(192, 255, 255);
-            btnClearEntry.Location = new Point(147, 176);
+            btnClearEntry.Location = new Point(107, 178);
             btnClearEntry.Name = "btnClearEntry";
-            btnClearEntry.Size = new Size(80, 48);
+            btnClearEntry.Size = new Size(90, 60);
             btnClearEntry.TabIndex = 21;
             btnClearEntry.Text = "CE";
             btnClearEntry.UseVisualStyleBackColor = false;
@@ -293,9 +295,9 @@
             // btnDot
             // 
             btnDot.BackColor = Color.FromArgb(192, 255, 255);
-            btnDot.Location = new Point(319, 392);
+            btnDot.Location = new Point(299, 441);
             btnDot.Name = "btnDot";
-            btnDot.Size = new Size(80, 48);
+            btnDot.Size = new Size(90, 60);
             btnDot.TabIndex = 22;
             btnDot.Text = ".";
             btnDot.UseVisualStyleBackColor = false;
@@ -304,9 +306,9 @@
             // btnSign
             // 
             btnSign.BackColor = Color.FromArgb(192, 255, 255);
-            btnSign.Location = new Point(147, 392);
+            btnSign.Location = new Point(107, 441);
             btnSign.Name = "btnSign";
-            btnSign.Size = new Size(80, 48);
+            btnSign.Size = new Size(90, 60);
             btnSign.TabIndex = 23;
             btnSign.Text = "+/-";
             btnSign.UseVisualStyleBackColor = false;
@@ -316,7 +318,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(606, 470);
+            ClientSize = new Size(606, 513);
             Controls.Add(btnSign);
             Controls.Add(btnDot);
             Controls.Add(btnClearEntry);
@@ -341,7 +343,8 @@
             Controls.Add(txtResult);
             Controls.Add(txtExpression);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Calculator";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
