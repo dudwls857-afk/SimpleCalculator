@@ -46,6 +46,9 @@
             btnMul = new Button();
             btnMinus = new Button();
             btnDiv = new Button();
+            btnDel = new Button();
+            btnClear = new Button();
+            btnClearEntry = new Button();
             SuspendLayout();
             // 
             // txtExpression
@@ -252,11 +255,47 @@
             btnDiv.UseVisualStyleBackColor = false;
             btnDiv.Click += btnDiv_Click;
             // 
+            // btnDel
+            // 
+            btnDel.BackColor = Color.FromArgb(192, 255, 255);
+            btnDel.Location = new Point(319, 176);
+            btnDel.Name = "btnDel";
+            btnDel.Size = new Size(80, 48);
+            btnDel.TabIndex = 19;
+            btnDel.Text = "Del";
+            btnDel.UseVisualStyleBackColor = false;
+            btnDel.Click += btnDel_Click;
+            // 
+            // btnClear
+            // 
+            btnClear.BackColor = Color.FromArgb(192, 255, 255);
+            btnClear.Location = new Point(233, 176);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(80, 48);
+            btnClear.TabIndex = 20;
+            btnClear.Text = "C";
+            btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
+            // 
+            // btnClearEntry
+            // 
+            btnClearEntry.BackColor = Color.FromArgb(192, 255, 255);
+            btnClearEntry.Location = new Point(147, 176);
+            btnClearEntry.Name = "btnClearEntry";
+            btnClearEntry.Size = new Size(80, 48);
+            btnClearEntry.TabIndex = 21;
+            btnClearEntry.Text = "CE";
+            btnClearEntry.UseVisualStyleBackColor = false;
+            btnClearEntry.Click += btnClearEntry_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(606, 470);
+            Controls.Add(btnClearEntry);
+            Controls.Add(btnClear);
+            Controls.Add(btnDel);
             Controls.Add(btnDiv);
             Controls.Add(btnMinus);
             Controls.Add(btnMul);
@@ -301,5 +340,8 @@
         private Button btnMul;
         private Button btnMinus;
         private Button btnDiv;
+        private Button btnDel;
+        private Button btnClear;
+        private Button btnClearEntry;
     }
 }

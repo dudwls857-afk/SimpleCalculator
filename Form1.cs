@@ -121,5 +121,26 @@ namespace SimpleCalculator
             op = "*";
             txtExpression.Text += "*";
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtExpression.Text = "";
+            txtResult.Text = "";
+            num1 = 0;
+            op = "";
+        }
+
+        private void btnClearEntry_Click(object sender, EventArgs e)
+        {
+            txtExpression.Text = "";
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            if (txtExpression.Text.Length > 0)
+            {
+                txtExpression.Text = txtExpression.Text.Substring(0, txtExpression.Text.Length - 1);
+            }
+        }
     }
 }
