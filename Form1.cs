@@ -28,8 +28,6 @@ namespace SimpleCalculator
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            num1 = int.Parse(txtExpression.Text);
-            op = "+";
             txtExpression.Text += "+";
         }
 
@@ -80,47 +78,37 @@ namespace SimpleCalculator
 
         private void btnEqual_Click(object sender, EventArgs e)
         {
-            string[] parts;
+            try
+            {
+                string expr = txtExpression.Text;
 
-            if (op == "+") parts = txtExpression.Text.Split('+');
-            else if (op == "-") parts = txtExpression.Text.Split('-');
-            else if (op == "*") parts = txtExpression.Text.Split('*');
-            else parts = txtExpression.Text.Split('/');
+                expr = expr.Replace("×", "*").Replace("÷", "/");
 
-            Double n1 = Double.Parse(parts[0]);
-            Double n2 = Double.Parse(parts[1]);
+                var result = new System.Data.DataTable().Compute(expr, "");
 
-            Double result = 0;
-
-            if (op == "+") result = n1 + n2;
-            else if (op == "-") result = n1 - n2;
-            else if (op == "*") result = n1 * n2;
-            else if (op == "/") result = n1 / n2;
-
-            txtExpression.Text = txtExpression.Text + "=" + result.ToString();
-            txtResult.Text = result.ToString();
+                txtExpression.Text = txtExpression.Text + "=" + result.ToString();
+                txtResult.Text = result.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("계산 오류");
+            }
         }
 
 
         private void btnDiv_Click(object sender, EventArgs e)
         {
-            num1 = Double.Parse(txtExpression.Text);
-            op = "/";
-            txtExpression.Text += "/";
+            txtExpression.Text += "÷";
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            num1 = Double.Parse(txtExpression.Text);
-            op = "-";
             txtExpression.Text += "-";
         }
 
         private void btnMul_Click(object sender, EventArgs e)
         {
-            num1 = Double.Parse(txtExpression.Text);
-            op = "*";
-            txtExpression.Text += "*";
+            txtExpression.Text += "×";
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -162,16 +150,35 @@ namespace SimpleCalculator
 
         private void btnSign_Click(object sender, EventArgs e)
         {
-            if (txtExpression.Text != "")
+            string expr = txtExpression.Text;
+
+            if (string.IsNullOrEmpty(expr))
+                return;
+
+            // 마지막 연산자 위치 찾기
+            int lastOpIndex = expr.LastIndexOfAny(new char[] { '+', '-', '×', '÷', '*', '/' });
+
+            if (lastOpIndex == -1)
             {
-                if (txtExpression.Text.StartsWith("-"))
-                {
-                    txtExpression.Text = txtExpression.Text.Substring(1);
-                }
+                // 숫자 하나만 있을 때
+                if (expr.StartsWith("-"))
+                    txtExpression.Text = expr.Substring(1);
                 else
-                {
-                    txtExpression.Text = "-" + txtExpression.Text;
-                }
+                    txtExpression.Text = "-" + expr;
+            }
+            else
+            {
+                // 마지막 숫자 부분만 가져오기
+                string left = expr.Substring(0, lastOpIndex + 1);
+                string right = expr.Substring(lastOpIndex + 1);
+
+                // 부호 변경
+                if (right.StartsWith("-"))
+                    right = right.Substring(1);
+                else
+                    right = "-" + right;
+
+                txtExpression.Text = left + right;
             }
         }
 
@@ -186,6 +193,16 @@ namespace SimpleCalculator
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            txtExpression.Text += "(";
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            txtExpression.Text += ")";
         }
     }
 }

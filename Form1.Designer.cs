@@ -51,6 +51,8 @@
             btnClearEntry = new Button();
             btnDot = new Button();
             btnSign = new Button();
+            btnOpen = new Button();
+            btnClose = new Button();
             SuspendLayout();
             // 
             // txtExpression
@@ -331,11 +333,37 @@
             btnSign.UseVisualStyleBackColor = false;
             btnSign.Click += btnSign_Click;
             // 
+            // btnOpen
+            // 
+            btnOpen.BackColor = Color.FromArgb(192, 255, 255);
+            btnOpen.Font = new Font("맑은 고딕", 15F);
+            btnOpen.Location = new Point(11, 178);
+            btnOpen.Name = "btnOpen";
+            btnOpen.Size = new Size(90, 60);
+            btnOpen.TabIndex = 24;
+            btnOpen.Text = "(";
+            btnOpen.UseVisualStyleBackColor = false;
+            btnOpen.Click += btnOpen_Click;
+            // 
+            // btnClose
+            // 
+            btnClose.BackColor = Color.FromArgb(192, 255, 255);
+            btnClose.Font = new Font("맑은 고딕", 15F);
+            btnClose.Location = new Point(11, 243);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(90, 60);
+            btnClose.TabIndex = 25;
+            btnClose.Text = ")";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += btnClose_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(606, 513);
+            Controls.Add(btnClose);
+            Controls.Add(btnOpen);
             Controls.Add(btnSign);
             Controls.Add(btnDot);
             Controls.Add(btnClearEntry);
@@ -391,5 +419,7 @@
         private Button btnClearEntry;
         private Button btnDot;
         private Button btnSign;
+        private Button btnOpen;
+        private Button btnClose;
     }
 }
