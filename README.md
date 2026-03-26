@@ -3,8 +3,10 @@
 ## 개요
 - C# 프로그래밍 학습을 위해 Windows Forms 환경에서 간단한 계산기 프로그램을 구현하였다. 사용자가 버튼을 통해 숫자를 입력하고 덧셈 연산을 수행한 뒤 결과를 출력하는 기능을 구현하였다.
 - 1줄 소개: 사용자 입력을 받아 덧셈 연산을 수행하고 결과를 출력하는 계산기 프로그램
-  - 사용한 플랫폼: C#, .NET Windows Forms, Visual Studio, GitHub
-  - 사용한 컨트롤: Label,TextBox, Button
+- 사용한 플랫폼: 
+  - C#, .NET Windows Forms, Visual Studio, GitHub
+- 사용한 컨트롤: 
+  - Label,TextBox, Button
 - 사용한 기술과 구현한 기능:
   - Visual Studio를 이용하여 UI를 구성하였다.
   - 버튼 클릭 이벤트를 통해 숫자 입력과 연산 기능을 구현하였다.
