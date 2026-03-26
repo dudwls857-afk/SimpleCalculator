@@ -56,6 +56,7 @@
             // txtExpression
             // 
             txtExpression.BackColor = Color.FromArgb(128, 255, 128);
+            txtExpression.Font = new Font("맑은 고딕", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 129);
             txtExpression.Location = new Point(107, 77);
             txtExpression.Multiline = true;
             txtExpression.Name = "txtExpression";
@@ -66,6 +67,7 @@
             // txtResult
             // 
             txtResult.BackColor = Color.FromArgb(128, 255, 128);
+            txtResult.Font = new Font("맑은 고딕", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 129);
             txtResult.Location = new Point(107, 123);
             txtResult.Multiline = true;
             txtResult.Name = "txtResult";
