@@ -76,6 +76,7 @@
             // btn0
             // 
             btn0.BackColor = Color.FromArgb(192, 255, 255);
+            btn0.Font = new Font("맑은 고딕", 20F);
             btn0.Location = new Point(203, 441);
             btn0.Name = "btn0";
             btn0.Size = new Size(90, 60);
@@ -87,6 +88,7 @@
             // btn1
             // 
             btn1.BackColor = Color.FromArgb(192, 255, 255);
+            btn1.Font = new Font("맑은 고딕", 20F);
             btn1.Location = new Point(107, 375);
             btn1.Name = "btn1";
             btn1.Size = new Size(90, 60);
@@ -98,6 +100,7 @@
             // btn2
             // 
             btn2.BackColor = Color.FromArgb(192, 255, 255);
+            btn2.Font = new Font("맑은 고딕", 20F);
             btn2.Location = new Point(203, 375);
             btn2.Name = "btn2";
             btn2.Size = new Size(90, 60);
@@ -109,6 +112,7 @@
             // btn3
             // 
             btn3.BackColor = Color.FromArgb(192, 255, 255);
+            btn3.Font = new Font("맑은 고딕", 20F);
             btn3.Location = new Point(299, 375);
             btn3.Name = "btn3";
             btn3.Size = new Size(90, 60);
@@ -120,6 +124,7 @@
             // btn4
             // 
             btn4.BackColor = Color.FromArgb(192, 255, 255);
+            btn4.Font = new Font("맑은 고딕", 20F);
             btn4.Location = new Point(108, 309);
             btn4.Name = "btn4";
             btn4.Size = new Size(90, 60);
@@ -131,6 +136,7 @@
             // btn5
             // 
             btn5.BackColor = Color.FromArgb(192, 255, 255);
+            btn5.Font = new Font("맑은 고딕", 20F);
             btn5.Location = new Point(203, 309);
             btn5.Name = "btn5";
             btn5.Size = new Size(90, 60);
@@ -142,6 +148,7 @@
             // btn6
             // 
             btn6.BackColor = Color.FromArgb(192, 255, 255);
+            btn6.Font = new Font("맑은 고딕", 20F);
             btn6.Location = new Point(299, 309);
             btn6.Name = "btn6";
             btn6.Size = new Size(90, 60);
@@ -153,6 +160,7 @@
             // button7
             // 
             button7.BackColor = Color.FromArgb(192, 255, 255);
+            button7.Font = new Font("맑은 고딕", 20F);
             button7.Location = new Point(108, 243);
             button7.Name = "button7";
             button7.Size = new Size(90, 60);
@@ -164,6 +172,7 @@
             // button8
             // 
             button8.BackColor = Color.FromArgb(192, 255, 255);
+            button8.Font = new Font("맑은 고딕", 20F);
             button8.Location = new Point(203, 243);
             button8.Name = "button8";
             button8.Size = new Size(90, 60);
@@ -175,6 +184,7 @@
             // button9
             // 
             button9.BackColor = Color.FromArgb(192, 255, 255);
+            button9.Font = new Font("맑은 고딕", 20F);
             button9.Location = new Point(299, 243);
             button9.Name = "button9";
             button9.Size = new Size(90, 60);
@@ -262,6 +272,7 @@
             // btnDel
             // 
             btnDel.BackColor = Color.FromArgb(192, 255, 255);
+            btnDel.Font = new Font("맑은 고딕", 15F);
             btnDel.Location = new Point(299, 177);
             btnDel.Name = "btnDel";
             btnDel.Size = new Size(90, 60);
@@ -273,6 +284,7 @@
             // btnClear
             // 
             btnClear.BackColor = Color.FromArgb(192, 255, 255);
+            btnClear.Font = new Font("맑은 고딕", 15F);
             btnClear.Location = new Point(203, 177);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(90, 60);
@@ -284,6 +296,7 @@
             // btnClearEntry
             // 
             btnClearEntry.BackColor = Color.FromArgb(192, 255, 255);
+            btnClearEntry.Font = new Font("맑은 고딕", 15F);
             btnClearEntry.Location = new Point(107, 178);
             btnClearEntry.Name = "btnClearEntry";
             btnClearEntry.Size = new Size(90, 60);
@@ -295,6 +308,7 @@
             // btnDot
             // 
             btnDot.BackColor = Color.FromArgb(192, 255, 255);
+            btnDot.Font = new Font("맑은 고딕", 15F);
             btnDot.Location = new Point(299, 441);
             btnDot.Name = "btnDot";
             btnDot.Size = new Size(90, 60);
@@ -306,6 +320,7 @@
             // btnSign
             // 
             btnSign.BackColor = Color.FromArgb(192, 255, 255);
+            btnSign.Font = new Font("맑은 고딕", 15F);
             btnSign.Location = new Point(107, 441);
             btnSign.Name = "btnSign";
             btnSign.Size = new Size(90, 60);
