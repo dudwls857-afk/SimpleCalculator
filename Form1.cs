@@ -2,7 +2,7 @@ namespace SimpleCalculator
 {
     public partial class Form1 : Form
     {
-        int num1 = 0;
+        Double num1 = 0;
         string op = "";
         public Form1()
         {
@@ -86,10 +86,10 @@ namespace SimpleCalculator
             else if (op == "*") parts = txtExpression.Text.Split('*');
             else parts = txtExpression.Text.Split('/');
 
-            int n1 = int.Parse(parts[0]);
-            int n2 = int.Parse(parts[1]);
+            Double n1 = Double.Parse(parts[0]);
+            Double n2 = Double.Parse(parts[1]);
 
-            int result = 0;
+            Double result = 0;
 
             if (op == "+") result = n1 + n2;
             else if (op == "-") result = n1 - n2;
@@ -103,21 +103,21 @@ namespace SimpleCalculator
 
         private void btnDiv_Click(object sender, EventArgs e)
         {
-            num1 = int.Parse(txtExpression.Text);
+            num1 = Double.Parse(txtExpression.Text);
             op = "/";
             txtExpression.Text += "/";
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            num1 = int.Parse(txtExpression.Text);
+            num1 = Double.Parse(txtExpression.Text);
             op = "-";
             txtExpression.Text += "-";
         }
 
         private void btnMul_Click(object sender, EventArgs e)
         {
-            num1 = int.Parse(txtExpression.Text);
+            num1 = Double.Parse(txtExpression.Text);
             op = "*";
             txtExpression.Text += "*";
         }
@@ -140,6 +140,29 @@ namespace SimpleCalculator
             if (txtExpression.Text.Length > 0)
             {
                 txtExpression.Text = txtExpression.Text.Substring(0, txtExpression.Text.Length - 1);
+            }
+        }
+
+        private void btnSign_Click(object sender, EventArgs e)
+        {
+            if (txtExpression.Text != "")
+            {
+                if (txtExpression.Text.StartsWith("-"))
+                {
+                    txtExpression.Text = txtExpression.Text.Substring(1);
+                }
+                else
+                {
+                    txtExpression.Text = "-" + txtExpression.Text;
+                }
+            }
+        }
+
+        private void btnDot_Click(object sender, EventArgs e)
+        {
+            if (!txtExpression.Text.Contains("."))
+            {
+                txtExpression.Text += ".";
             }
         }
     }

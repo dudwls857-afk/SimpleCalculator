@@ -49,6 +49,8 @@
             btnDel = new Button();
             btnClear = new Button();
             btnClearEntry = new Button();
+            btnDot = new Button();
+            btnSign = new Button();
             SuspendLayout();
             // 
             // txtExpression
@@ -288,11 +290,35 @@
             btnClearEntry.UseVisualStyleBackColor = false;
             btnClearEntry.Click += btnClearEntry_Click;
             // 
+            // btnDot
+            // 
+            btnDot.BackColor = Color.FromArgb(192, 255, 255);
+            btnDot.Location = new Point(319, 392);
+            btnDot.Name = "btnDot";
+            btnDot.Size = new Size(80, 48);
+            btnDot.TabIndex = 22;
+            btnDot.Text = ".";
+            btnDot.UseVisualStyleBackColor = false;
+            btnDot.Click += btnDot_Click;
+            // 
+            // btnSign
+            // 
+            btnSign.BackColor = Color.FromArgb(192, 255, 255);
+            btnSign.Location = new Point(147, 392);
+            btnSign.Name = "btnSign";
+            btnSign.Size = new Size(80, 48);
+            btnSign.TabIndex = 23;
+            btnSign.Text = "+/-";
+            btnSign.UseVisualStyleBackColor = false;
+            btnSign.Click += btnSign_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(606, 470);
+            Controls.Add(btnSign);
+            Controls.Add(btnDot);
             Controls.Add(btnClearEntry);
             Controls.Add(btnClear);
             Controls.Add(btnDel);
@@ -343,5 +369,7 @@
         private Button btnDel;
         private Button btnClear;
         private Button btnClearEntry;
+        private Button btnDot;
+        private Button btnSign;
     }
 }
